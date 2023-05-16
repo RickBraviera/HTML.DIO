@@ -1,0 +1,193 @@
+<html>
+    <head>
+        <title>Página - Módulo I - Primeiros Passos com HTML</title></head>
+    <hr>
+    <body>
+        <h1>Módulo I - Passo a passo com HTML</h1>
+    <hr>
+        <h2 id="indice"> Índice</h2>
+        <ul><h3>
+            <li><a href="#surgimento"> Surgimento do HTML</a></li>
+            <li><a href="#edição">Edição de documentos HTML</a></li>
+            <li><a href="#estrutura"> Estrutura básica de um documento HTML</a>
+            </li></h3>
+            <ul><h4>
+                <li><a href="#cabeçalho">Cabeçalho</a></li>
+                <li><a href="#corpo">Corpo</a></li>
+            </h4></ul>
+            <h3><li><a href="#tag">O que são TAG e Atributos?</a></li>
+                <li><a href="#lista">Lista ordenada e não ordenada</a></li></h3>
+            <ul><h4>
+                <li><a href="#lista ordenada">Lista ordenada</a></li>
+                <li><a href="#lista não ordenada">Lista não ordenada</a></li>
+            </h4></ul>
+            <h3><li><a href="#link">O que são Link no html?</a></li>
+            <li><a href="#referencias">Referencias</a></li>
+        </h3>
+        </ul>
+        <h4 id="surgimento"><u>Surgimento do HTML</u></h4>
+        <p>Tim Berners-Lee (físico britânico) criou o HTML original (e outros protocolos associados como o HTTP),
+         numa estação NeXTcube, usando o ambiente de desenvolvimento NeXTSTEP. Na época, a linguagem não era uma 
+         especificação, mas uma coleção de ferramentas para resolver um problema de Tim: a comunicação e disseminação 
+         das pesquisas entre ele e o seu grupo de colegas. A sua solução, combinada com a então emergente internet
+         pública (que tornar-se-ia a Internet), ganhou atenção mundial.</p>
+        <p>As primeiras versões do HTML foram definidas com regras sintáticas flexíveis, o que ajudou aqueles sem
+        familiaridade com a publicação na Web. Através do tempo, a utilização de ferramentas para autoria de HTML 
+        aumentou, assim como a tendência em tornar a sintaxe cada vez mais rígida. Apesar disso, por questões 
+        históricas (retrocompatibilidade), os navegadores ainda hoje conseguem interpretar páginas web que estão 
+        longe de ser um código HTML válido.</p>
+        <p>A linguagem foi definida em especificações formais na década de 1990, inspiradas nas propostas originais 
+        de Tim Berners-Lee em criar uma linguagem baseada em SGML para a Internet. A primeira publicação foi esboçada
+        por Berners-Lee e Dan Connolly e publicada em 1993 na IETF, como uma aplicação formal para o SGML 
+        (com uma DTD em SGML definindo a gramática). A IETF criou um grupo de trabalho para o HTML no ano seguinte, 
+        e publicou o HTML 2.0 em 1995. Desde 1996, as especificações HTML vêm sendo mantidas, com o auxílio de 
+        fabricantes de software, pelo World Wide Web Consortium (W3C). Apesar disso, em 2000 a linguagem tornou-se 
+        também uma norma internacional (ISO/IEC 15445:2000). A recomendação HTML 4.01 foi publicada no final de 1999 
+        pelo W3C. Uma errata ainda foi lançada em 2001.</p>
+        <p>Desde a publicação do HTML 3.5 final de 1997, o grupo de trabalho da W3C tem cada vez mais — e de 2002
+        a 2006, de forma exclusiva — focado no desenvolvimento do XHTML, uma especificação HTML baseada em XML que é 
+        considerada pela W3C como um sucessor do HTML. O XHTML faz uso de uma sintaxe mais rigorosa e menos ambígua 
+        para tornar o HTML mais simples de ser processado e estendido.</p>
+        <p>Em janeiro de 2008 o W3C publicou a especificação do HTML5 como Working Draft. Apesar de sua sintaxe ser 
+        semelhante à de SGML, o HTML5 abandonou qualquer tentativa de ser uma aplicação SGML e definiu explicitamente
+        sua própria serialização "html", além de uma alternativa baseada em XML, o XHTML5</p>
+        <p><h5>Várias versões HTML foram publicadas:</h5></p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYu72rhjeYlD0KTIZz19yyod_E4xtFPxKjptkKBQ2UVomZaay__uaZ1RJuuPWmtaHViVk&usqp=CAU" width="500">
+        <blockquote>Este tutorial segue o padrão HTML5 mais recente.</blockquote>
+        <h6><a href="#indice"> Voltar</a></h6>
+        <h4 id="edição"><u>Edição de documentos HTML</u></h4>
+        <p>Os documentos em HTML são arquivos de texto simples que podem ser criados e editados em qualquer editor de 
+        textos comum, como o Bloco de Notas do Windows, ou o TextEdit, do Macintosh. Para facilitar a produção de 
+        documentos, no mercado existem editores HTML específicos, com recursos sofisticados, que facilitam a realização 
+        de tarefas repetitivas, inserção de objetos, elaboração de tabelas e outros recursos</p>
+        <p>Basicamente dividem-se em dois tipos:</p>
+        <ul><li>Editores de texto fonte: inserem automaticamente os marcadores, orientando a inserção de atributos e marcações</li>
+        <li>Editores WYSIWYG: oferecem ambiente de edição com um "esboço" resultado final das marcações</li></ul>
+        <h6><a href="#indice"> Voltar</a></h6>
+        <h4 id="estrutura"><u>Estrutura básica de um documento HTML</u></h4>
+        <p>Os marcadores HTML não são sensíveis à caixa, portanto tanto faz escrever <.HTML>, <.Html>, <.html> ou <.HtMl>.</p>
+        <p>Os marcadores básicos de HTML, cuja presença é altamente recomendada nas páginas são:</p>
+        <ul><li><.html>: Define o início de um documento HTML e indica ao navegador que todo conteúdo posterior deve ser tratado 
+        como uma série de códigos HTML</li>
+        <li><.head>: Define o cabeçalho de um documento HTML, que traz informações sobre o documento que está sendo aberto</li>
+        <li><.body>: define o conteúdo principal, o corpo do documento. Esta é a parte do documento HTML que é exibida no navegador.
+         No corpo podem-se definir atributos comuns a toda a página, como cor de fundo, margens, e outras formatações.</li></ul>
+         <blockquote>O conteúdo dentro da seção <.body> será exibido em um navegador. O conteúdo dentro do elemento
+         <.title> será mostrado na barra de título do navegador ou na aba da página.</blockquote>   
+         <p id="cabeçalho"><strong>Cabeçalho</strong></p>
+        <p>São meta informações sobre documento. Tais campos são muito usados por mecanismos de busca (como o Google, Yahoo!, Bing)
+        para obterem mais informações sobre o documento, a fim de classificá-lo melhor. Por exemplo, pode-se adicionar o código; 
+        <.meta name="description" content="descrição da sua página" /> no documento HTML para indicar ao motor de busca que texto de
+        descrição apresentar junto com a ligação para o documento. Para o motor de busca Google, por exemplo, elementos meta como 
+        keywords não são utilizadas para indexar páginas. Apenas <.title> e a meta <.description> são usadas para descrever a página 
+        indexada.</p>
+        <blockquote>Os marcadores <.style> e <.script> servem tanto para delimitar os espaços usados pelos códigos na página quanto
+        para invocar códigos existentes em outros arquivos externos.</blockquote>
+        <p id="corpo"><strong>Corpo</strong></p>
+        <p> A tag <.body> contém o corpo de um documento HTML, que é exibido pelo navegador em sua janela, ou seja, todo o conteúdo 
+        visível do site. É necessário que o <.body> tenha ao menos um elemento "filho", ou seja, uma ou mais tags HTML dentro dele.</p>
+        <p>Dentro do corpo podemos encontrar outros vários marcadores que irão moldar a página, como por exemplo:</p>
+        <ul><li><.h1>, <.h2>, ... <.h6>: Títulos que variam de tamanho dentro das prioridades (sua aparência pode ser alterada com 
+        CSS - Cascade Style Sheet - Folhas de Estilo em Cascata).</li>
+        <li><.p>: Parágrafo.</li>
+        <li><.br />: Quebra de linha.</li>
+        <li><.table>: Cria uma tabela (linhas são criadas com <.TR> e novas células com <.TD>, já os cabeçalhos das colunas são criados
+        com os marcadores <.THead><.TH> e os rodapés com <.TFooter><.TR><.TD>).</li>
+        <li><.div>: Determina uma divisão na página a qual pode possuir variadas formatações.</li>
+        <li><.b>, <.i>, <.u> e <.s>: Negrito, itálico, sublinhado e riscado, respectivamente.</li>
+        <li><.img />: Imagem.</li>
+        <li><.a>: Hiper-ligação para um outro local, seja uma página, um e-mail ou outro serviço.</li>
+        <li><.textarea>: caixa de texto (com mais de uma linha); estas caixas de texto são muito usadas em blogs, elas podem ser auto 
+        selecionáveis e conter outros códigos a serem distribuídos.</li></ul>
+        <p>A estrutura básica de um documento HTML (Hyper Text Markup Language - Linguagem de Marcação de Hypertexto), apresenta as 
+        seguintes marcações:</p>
+        <.!DOCTYPE html>
+<.html lang="pt-br"><br/>
+    <.head><br/>
+        <.meta charset="utf-8" /><br/>
+        <.meta name="description" content="a descrição do seu site em no máximo 90 caracteres"><br/>
+        <.meta name="keywords" content="escreva palavras-chaves curtas, máximo 150 caracteres"><br/>
+        <.title>Título do Documento<./title><br/>
+    <./head><br/>
+    <.body><br/>
+    <.!-- Aqui fica a página que será visível para todos, onde pode-se inserir
+    textos, imagens, links para outras páginas, etc, geralmente usa-se: --><br/>
+
+    <.div><br/>
+        Tag para criar-se uma 'caixa', um bloco, mais utilizada com "Cascading Style Sheets
+         (Folhas de Estilo em Cascata)
+    <./div><br/>
+
+    <.span>Tag para modificação de uma parte do texto da página<./span><br/>
+
+    <.img src="endereço_de_uma_imagem.jpg" /><br/>
+
+    <.a href="https://web.dio.me/home">DIO, Codifique seu futuro global agora!<./a><br/>
+    <./body><br/>
+    <./html><br/>
+    
+    <h6><a href="#indice"> Voltar</a></h6>
+    <p id="tag"><strong><u>O que são TAG e Atributos?</u></strong></p>
+    <p>Todo documento HTML possui marcadores (do inglês: tags), palavras entre parênteses angulares
+    (chevron) (< e >); esses marcadores são os comandos de formatação da linguagem. Um elemento é 
+    formado por um nome de marcador (tag), atributos, valores e filhos (que podem ser outros elementos
+    ou texto). Os atributos modificam os resultados padrões dos elementos e os valores caracterizam 
+    essa mudança. </p>
+    <p>Exemplo de um elemento simples, tags (não possui filhos):</p>
+    <ul><li>p = marcador que define um parágrafo</li>
+    <li>a = marcador que define uma hiperligação</li>
+    </ul>
+    <p>Outro exemplo de elemento composto, atributos (possui filhos):</p>
+    <ul><li>href = atributo que define a URL da hiperligação</li>
+    <li>target = atributo que define a forma como a hiperligação será aberta.</li>
+    <li>_self = valor do atributo Target que define que a hiperligação será aberta na mesma guia</li>
+    </ul>
+    <p>Isso é necessário porque os marcadores servem para definir a formatação de uma porção do documento,
+    e assim marcamos onde começa e termina o conteúdo que receberá a formatação ou marcação necessária, 
+    específica. Alguns elementos são chamados “vazios”, pois não marcam uma região de texto, apenas inserem
+    algum elemento no documento.</p>
+    <p>Cada elemento tem os seus atributos possíveis e os seus valores. Um exemplo, é o atributo href que 
+    pode ser usado com o elemento a, com o link mas que não pode ser usado com o elemento meta. Isso quer
+    dizer que devemos saber exatamente quais os atributos e valores possíveis para cada elemento.</p>
+    <p>De uma maneira geral o HTML é um poderoso recurso, sendo uma linguagem de marcação muito simples e 
+    acessível voltada para a produção e compartilhamento de documentos, imagens, vídeos e áudio via 
+    streaming.</p>
+    <p>Na sua versão mais recente, o HTML5, é possível criar marcadores personalizados com JavaScript, 
+    linguagem de programação diretamente compatível com o HTML. Cada tag pode ter uma função específica
+    utilizando uma API (Interface de programação de aplicações) diferente, assim como seus nomes e estilos.</p>
+    <h6><a href="#indice"> Voltar</a></h6>
+    <p id="lista"><strong><u>Lista ordenada e não ordenada</u></strong></p>
+     <p>Outra forma de estruturar um documento HTML é a utilização de listas. Elas funcionam como um sumário,
+    um menu ou um resumo do conteúdo do documento. Existem dois tipos de listas, as Não ordenadas, que contêm 
+    uma série de itens sem numeração, e as Ordenadas, que atribuem um número ou letra para cada elemento da 
+    lista.</p>
+    <p id="lista ordenada"><strong>Lista ordenada</strong></p>
+    <p>O Elemento HTML <.ol> (ou Elemento HTML de lista ordenada) representa uma lista de itens ordenados. 
+    De forma característica esses itens ordenados em uma lista são mostrados com uma contagem que os precede, 
+    que pode ser de qualquer tipo, como numerais, letras, algarismos romanos, ou simples símbolos. Cada item 
+    da lista começa com a tag <.li>.</p>
+    <img src="https://www.ibiblio.org/pub/Linux/docs/LuCaS/Manuales-LuCAS/doc-curso-html/doc-curso-html/img/fig4-005.png" width="500">
+    <p id="lista não ordenada"><strong>Lista não ordenada</strong></p>
+    <p>Uma lista não ordenada é uma lista de itens. As listas de itens são marcadas com bullets (tipicamente 
+    pequenos círculos pretos). Uma lista não ordenada começa com a tag <.ul>. Cada item da lista começa com a 
+    tag <.li>.</p>
+    <img src="https://3.bp.blogspot.com/-aBhokyKVp64/Vw2XgZyJvSI/AAAAAAAAAnc/ExQQFf77iIII0eXwxy-7rLSP64nZIYe0wCLcB/s1600/Captura%2Bde%2Btela%2Bde%2B2016-04-12%2B21%253A36%253A06.png" width="500">
+    <h6><a href="#indice"> Voltar</a></h6>
+    <p id="link"><strong><u>O que são Link no html?</u></strong></p>
+    <p>O Elemento HTML <.link> especifica as relações entre o documento atual e um recurso externo. Possíveis 
+    usos para este elemento incluem a definição de uma estrutura relacional para navegação. Este elemento é 
+    mais usado para vincular as folhas de estilo, ou seja, links que apontam para páginas de fora de um site.
+    Isso significa que esses links enviam o usuário para um site diferente daquele que ele está navegando.</p>
+    <p>Para criar um link em uma página da web, você precisa envolver um elemento (um texto, uma imagem e 
+    assim por diante) em um elemento de âncora <.a> e definir seu atributo href para que aponte para o URL 
+    o qual você quer associar.</p>
+    <h6><a href="#indice"> Voltar</a></h6>
+    <p id="referencias"><strong><u>Referencias</u></strong></p>
+    <p> <ul><li><a href="https://www.w3.org/People/Raggett/book4/ch02.html" title="Clique aqui e confira" target="blank">w3.com.br</a></li>
+        <li><a href="https://www.w3.org/MarkUp/2000/Charter" title="Clique aqui e confira" target="blank">w3.com</a></li>
+        <li><a href="https://html.spec.whatwg.org/multipage/" title="Clique aqui e confira" target="blank">spec.com</a></li>
+        <li><a href="https://developer.mozilla.org/pt-BR/docs/Learn/HTML" title="Clique aqui e confira" target="blank">develope.com.br</a></li>
+        </ul></p>
+    <h6><a href="#indice"> Voltar</a></h6>
+
+    </html>
